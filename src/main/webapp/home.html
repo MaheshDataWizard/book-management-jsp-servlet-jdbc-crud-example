@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Register</title>
+    <style>
+      div {
+        width: 400px;
+        margin: 100px auto 0px;
+        padding: 30px;
+        text-align: center;
+        border: 5px solid black;
+      }
+      tr,
+      td {
+        padding: 5px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .btn {
+        margin-top: 10px;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn:hover {
+        background-color: #0056b3; 
+        border-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Book Registration</h2>
+      <form action="register" method="post">
+        <table>
+          <tr>
+            <td>Book Name</td>
+            <td><input type="text" name="bookName" required /></td>
+          </tr>
+          <tr>
+            <td>Book Edition</td>
+            <td><input type="text" name="bookEdition" required /></td>
+          </tr>
+          <tr>
+            <td>Book Price</td>
+            <td><input type="text" name="bookPrice" required /></td>
+          </tr>
+          <tr>
+            <td><input class="btn" type="submit" value="Add Book" /></td>
+            <td><input class="btn" type="reset" value="Cancel" /></td>
+          </tr>
+        </table>
+        <a class="btn" href="bookListServlet">Book List</a>
+      </form>
+    </div>
+  </body>
+</html>
